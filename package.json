@@ -1,0 +1,17 @@
+{
+  "name": "sitio-web",
+  "version": "1.0.0",
+  "description": "Sitio web con diseno minimalista",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Brayan Duran Velasquez",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
