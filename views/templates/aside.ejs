@@ -1,0 +1,41 @@
+<aside class="col-12 col-md-4">
+    <div class="row">
+
+        <div class="col-12 pb-4">
+            <h3>Buscar:</h3>
+            <hr>
+            <input class="form-control" type="text" placeholder="Buscar un articulo, publicacion, etc">
+            <button class="btn btn-dark float-right">Buscar</button>
+        </div> <!-- Buscador -->
+
+        <br>
+
+        <div class="col-12">
+            <h3>Más Publicaciones:</h3>
+            <hr>
+
+            <!-- Se van mostrando todas las tarjetas respectivamente a las publicaciones existentes -->
+
+            <% if (publicaciones.length > 0) { %>
+                <% publicaciones.forEach(publicacion => { %>
+                    <% if (publicacion.viewNombre != viewActual) { %>
+
+                        <div class="card">
+                            <img class="card-img-top" src=<%= publicacion.imgUrl %>>
+                            <div class="card-body">
+                                <h4 class="card-title"> <%= publicacion.titulo %> </h4>
+                                <p class="card-text"><%= publicacion.descripcion %></p>
+                                <a href=<%= publicacion.viewNombre %> class="btn btn-primary">Ver publicación</a>
+                            </div>
+                        </div>
+
+                        <br>
+
+                    <% } %>
+                <% }) %>
+            <% } %>
+
+        </div> <!-- Mas publicacion -->
+
+    </div>
+</aside>

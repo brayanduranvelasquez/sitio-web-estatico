@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brayan Duran Velasquez">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font/font.css"> <!-- Fuente Roboto -->
+    <title> <%= titulo %> </title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">SitioWeb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse collapse-end navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Medios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class=" container pt-4 pb-4">
+
+        <div class="row pb-2">
+            <div class="col-12">
+                <div class="breadcrumb bg-transparent" style="margin: 0; padding: 0">
+                    <ul class="breadcrumb-item">Estas en: &nbsp; <span class="text-primary">Inicio</span></ul>
+                    <ul class="breadcrumb-item text-primary">Informática</ul>
+                    <ul class="breadcrumb-item"> <%= titulo %> </ul>
+                </div>
+            </div>
+        </div> <!-- Breadcrumb (Migas de Pan) -->
+
+        <div class="row">
+
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2><%= titulo %></h2>
+                            <h5> Publicado por: <%= publicadoPor %> | <img style="width: 36px;" src=<%= imgPerfilUrl %>
+                                    class="rounded-circle"> </h5>
+                            <h6><%= diaPublicacion %></h6>
+                        </div>
+                    </div> <!-- Titulo General -->
+            
+                    <%- include('publications/' + viewNombre) %> <!-- Aqui se muestra toda la informacion de la publicacion -->
+            
+                    <%- include('templates/socialLink') %>
+                </div>
+            </div> <!-- Informacion -->
+
+            <%- include('templates/aside', { publicaciones: publicaciones, viewActual: viewNombre }) %>
+
+        </div> <!-- Tanto el contenido principal y el aside -->
+
+        <div class="pb-2" style="background-color: #ccc; padding: 20px; border-radius: 10px;">
+            <h2> Haz tu comentario </h2>
+            <p>Nos interesa saber su opinión.</p>
+
+            <div class="p-2">
+                <div class="form-group">
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Nombre" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Correo Electronico (opcional)</label>
+                    <input type="text" placeholder="Correo Electronico" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Comentario</label>
+                    <textarea rows="5" class="form-control" placeholder="Comente su opinion"></textarea>
+                </div>
+
+                <br>
+
+                <div class="form-group d-flex justify-content-end">
+                    <button class="btn btn-primary">Enviar comentario</button>
+                </div>
+
+
+            </div>
+
+        </div> <!-- Formulario -->
+
+    </main>
+
+    <footer class="p-4" style="background-color: rgb(228, 228, 228);">
+        <div class="container">
+            <div class="text-center">
+                <a href="#">Politica de Privacidad</a> &nbsp; |
+                <a href="#">Condiciones</a>&nbsp; |
+                <a href="#">Contacto</a>&nbsp; |
+                <a href="#">Biblioteca</a>&nbsp; |
+                <a href="#">Avisos</a>&nbsp;
+            </div> <!-- Enlaces -->
+
+            <br>
+
+            <div class="text-center">
+                Sitio web estático de uso academico. Puedes ver el repositorio <a href="">aquí</a>.
+
+                <br>
+
+                <b>Noviembre - 2020</b>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
