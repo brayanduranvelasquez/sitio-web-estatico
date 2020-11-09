@@ -30,6 +30,16 @@ var publicaciones = [{
         imgUrl: '/img/virus-informatico/1.jpg',
         diaPublicacion: 'El 22 de marzo del 2020',
     },
+    {
+        viewNombre: 'web',
+
+        titulo: 'La web como la conocemos',
+        descripcion: '¿Que es la web? aprendamos.',
+        publicadoPor: 'Milagros Velásquez',
+        imgPerfilUrl: '/img/perfiles/milagros-velasquez.jpg',
+        imgUrl: '/img/web/1.jpg',
+        diaPublicacion: 'El 16 de mayo del 2020',
+    },
 ];
 
 publicaciones.forEach(publicacion => {
