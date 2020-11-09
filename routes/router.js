@@ -20,6 +20,16 @@ var publicaciones = [{
         imgUrl: '/img/javascript/1.jpg',
         diaPublicacion: 'El 12 de marzo del 2020',
     },
+    {
+        viewNombre: 'virus-informatico',
+
+        titulo: 'Los virus informaticos',
+        descripcion: 'A todos nos ha tocado lidiar con un virus informatico. ¿Sabes que son capaces de hacer?',
+        publicadoPor: 'Cecilia Garcia',
+        imgPerfilUrl: '/img/perfiles/cecilia-garcia.jpg',
+        imgUrl: '/img/virus-informatico/1.jpg',
+        diaPublicacion: 'El 22 de marzo del 2020',
+    },
 ];
 
 publicaciones.forEach(publicacion => {
