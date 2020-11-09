@@ -42,6 +42,87 @@ var publicaciones = [{
     },
 ];
 
+var reacciones = [{
+        viewNombre: 'base-de-datos',
+        megustas: 22,
+        nomegustas: 2,
+    },
+    {
+        viewNombre: 'javascript',
+        megustas: 72,
+        nomegustas: 22,
+    },
+    {
+        viewNombre: 'virus-informatico',
+        megustas: 105,
+        nomegustas: 17,
+    },
+    {
+        viewNombre: 'web',
+        megustas: 62,
+        nomegustas: 6,
+    }
+];
+
+var comentarios = [{
+        viewNombre: 'base-de-datos',
+        comentarios: [{
+                nombre: 'Maria',
+                apellido: 'Velasquez',
+                imgUrl: 'maria-velasquez.jpg',
+                diaComentario: '08 de Noviembre del 2020',
+                contenido: 'Muy buen contenido. Me ha sido de ayuda.'
+            },
+            {
+                nombre: 'Javianys',
+                apellido: 'Hernandez',
+                imgUrl: 'javianys.jpg',
+                diaComentario: '09 de Noviembre del 2020',
+                contenido: 'Sin las bases de datos, no existira las paginas web ni mucho menos los ordenadores.'
+            },
+        ]
+    },
+    {
+        viewNombre: 'javascript',
+        comentarios: [{
+            nombre: 'Anabel',
+            apellido: 'Cristina M.',
+            imgUrl: 'anabel-cristina.jpg',
+            diaComentario: '17 de Julio del 2020',
+            contenido: '¡Yo amo Javascript! soy desarrolladora frontend.'
+        }, ]
+    },
+    {
+        viewNombre: 'virus-informatico',
+        comentarios: [{
+                nombre: 'Fabiana',
+                apellido: 'Bello',
+                imgUrl: 'fabiana-bello.jpg',
+                diaComentario: '23 de Julio del 2020',
+                contenido: 'Me recuerdo cuando tenia un antivirus. Instale un antivirus de pago porque son mas mejores.'
+            },
+            {
+                nombre: 'Gloriannys',
+                apellido: 'Torres',
+                imgUrl: 'gloriygenesis.jpg',
+                diaComentario: '01 de Agosto del 2020',
+                contenido: 'Me quedo sorprendida con todo lo que pueden hacer los virus!!!'
+            },
+            {
+                nombre: 'Lorennys',
+                apellido: 'Loroño',
+                imgUrl: 'lorennys.jpg',
+                diaComentario: '27 de Septiembre del 2020',
+                contenido: 'Con razón los llaman virus. No sabía sobre esto...'
+            },
+        ]
+    },
+    {
+        viewNombre: 'web',
+        comentarios: []
+    },
+];
+
 publicaciones.forEach(publicacion => {
 
     router.get('/' + publicacion.viewNombre, (req, res) => {
@@ -55,7 +136,9 @@ publicaciones.forEach(publicacion => {
             imgUrl: publicacion.imgUrl,
             diaPublicacion: publicacion.diaPublicacion,
 
-            publicaciones: publicaciones // Toda la informacion de las publicaciones, para ser usadar en las Tarjetas en el "aside"
+            publicaciones: publicaciones,
+            comentarios: comentarios,
+            reacciones: reacciones
         });
     })
 

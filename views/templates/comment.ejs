@@ -1,0 +1,69 @@
+<div class="col-12 pt-2 pb-4">
+    <% if (reacciones.length > 0){ %>
+        <% reacciones.forEach(reaccion => {  %>
+            <% if(reaccion.viewNombre == viewActual){  %>
+
+                <!-- Si existen la variable que contiene a las reacciones, luego recorre todas en busca de exactamente las reacciones de esta vista -->
+
+                <div class="text-center pb-4">
+                    <h5>Califica esta publicación</h5>
+                    <button class="btn btn-success"><%= reaccion.megustas %> me gustas</button>
+                    <button class="btn btn-danger"><%= reaccion.nomegustas %> no me gusta</button>
+                </div>
+
+            <% } %>
+        <% }) %>
+    <% } %>
+
+    <div>
+        
+        <% if (comentarios.length > 0){ %>
+            <% comentarios.forEach(comentario => {  %>
+                <% if(comentario.viewNombre == viewActual){  %>
+
+                    <!-- Si existe la variable "comentarios", hace un recorrido en busca de los comentarios de esta vista. Si hay comentarios, los va mostrando uno por uno segun el arreglo de objetos. De no ser asi, mostrara un mensaje avisando que no hay comentarios.  -->
+                    
+                    <% if(comentario.comentarios.length == 0){ %>
+
+                        <div class="text-center pt-4">
+                            <img src="/img/iconos/information-button.png" style="width: 46px;">
+                            <h2> No hay comentarios</h2>
+                            Puedes ser el primero en comentar.
+                        </div>
+
+                    <% } else { %>
+
+                        <h2>Comentarios</h2>
+
+                        <% comentario.comentarios.forEach(puntero => {  %>
+
+                            <div class="comment pt-4">
+                                <div class="comment__photo">
+                                    <img src=<%= "/img/perfiles/" + puntero.imgUrl %> class="rounded-circle">
+                                </div>
+
+                                <div class="comment__nickname">
+                                    <%= puntero.nombre %> <%= puntero.apellido %>
+                                </div>
+
+                                <div class="comment__date">
+                                    <%= puntero.diaComentario %>
+                                </div>
+
+                                <div class="comment__content">
+                                    <%= puntero.contenido %>
+                                </div>
+                            </div>
+                        <% }) %>
+
+                    <% } %>
+
+                <% } %>
+            <% }) %>
+        <% } %> 
+    </div>
+</div>
+
+<div class="col-12 p-4">
+    <hr>
+</div> <!-- Separador -->

@@ -1,0 +1,44 @@
+.comment {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background: rgb(221, 221, 221);
+    display: grid;
+    grid-template-areas: "photo name"
+                         "photo date"
+                         "photo content";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 20% 60%;
+
+    &__photo {
+        grid-area: photo;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        img {
+            width: 75px;
+        }
+    }
+
+    &__nickname {
+        padding-top: 100px;
+        grid-area: name;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    &__date {
+        grid-area: date;
+        color: rgb(82, 82, 82);
+        font-style: italic;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__content {
+        grid-area: content;
+        padding-top: 6px;
+    }
+}
