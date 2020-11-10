@@ -6,7 +6,7 @@
 
 .comment {
   width: 100%;
-  padding: 8px;
+  padding: 6px;
   margin-bottom: 8px;
   border-radius: 10px;
   background: #dddddd;
@@ -14,6 +14,12 @@
   grid-template-areas: "photo name" "photo date" "photo content";
   grid-template-columns: 20% 80%;
   grid-template-rows: 20% 20% 60%; }
+  @media screen and (max-width: 480px) {
+    .comment {
+      padding-left: 10px;
+      grid-template-areas: "name" "date" "content";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 20% 60%; } }
   .comment__photo {
     grid-area: photo;
     display: flex;
@@ -21,6 +27,9 @@
     padding: 10px; }
     .comment__photo img {
       width: 75px; }
+    @media screen and (max-width: 480px) {
+      .comment__photo img {
+        display: none; } }
   .comment__nickname {
     padding-top: 100px;
     grid-area: name;

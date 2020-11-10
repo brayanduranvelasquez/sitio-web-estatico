@@ -1,6 +1,6 @@
 .comment {
     width: 100%;
-    padding: 8px;
+    padding: 6px;
     margin-bottom: 8px;
     border-radius: 10px;
     background: rgb(221, 221, 221);
@@ -11,13 +11,29 @@
     grid-template-columns: 20% 80%;
     grid-template-rows: 20% 20% 60%;
 
+    @media screen and (max-width: 480px){
+        padding-left: 10px;
+        grid-template-areas: "name"
+                             "date"
+                             "content";
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 60%;
+    }
+
     &__photo {
         grid-area: photo;
         display: flex;
         justify-content: center;
         padding: 10px;
+
         img {
             width: 75px;
+        }
+
+        @media screen and (max-width: 480px){
+            img {
+                display: none;
+            } 
         }
     }
 
