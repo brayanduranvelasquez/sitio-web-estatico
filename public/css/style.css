@@ -26,7 +26,12 @@
     justify-content: center;
     padding: 10px; }
     .comment__photo img {
-      width: 75px; }
+      width: 75px;
+      height: 75px;
+      min-width: 75px;
+      min-height: 75px;
+      max-width: 75px;
+      max-height: 75px; }
     @media screen and (max-width: 480px) {
       .comment__photo img {
         display: none; } }
