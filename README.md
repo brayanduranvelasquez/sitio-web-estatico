@@ -24,12 +24,12 @@ Con respecto al texto en las publicaciones, fue resumido y analizado. De igual f
 
 ## Capturas de Pantalla
 
-![captura](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/master/capturas-de-pantalla/capturada.jpg)
+![captura](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/main/capturas-de-pantalla/capturada.jpg)
 
-![captura-2](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/master/capturas-de-pantalla/capturada-2.jpg)
+![captura-2](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/main/capturas-de-pantalla/capturada-2.jpg)
 
-![captura-3](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/master/capturas-de-pantalla/capturada-3.jpg)
+![captura-3](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/main/capturas-de-pantalla/capturada-3.jpg)
 
-![captura-4](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/master/capturas-de-pantalla/capturada-4.jpg)
+![captura-4](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/main/capturas-de-pantalla/capturada-4.jpg)
 
-![captura-5](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/master/capturas-de-pantalla/capturada-5.jpg)
+![captura-5](https://raw.githubusercontent.com/brayanduranvelasquez/sitio-web-estatico/main/capturas-de-pantalla/capturada-5.jpg)
