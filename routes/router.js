@@ -144,4 +144,22 @@ publicaciones.forEach(publicacion => {
 
 })
 
+router.get('/', (req, res) => {
+
+    res.render('index', {
+        viewNombre: publicaciones[0].viewNombre,
+
+        titulo: publicaciones[0].titulo,
+        publicadoPor: publicaciones[0].publicadoPor,
+        imgPerfilUrl: publicaciones[0].imgPerfilUrl,
+        imgUrl: publicaciones[0].imgUrl,
+        diaPublicacion: publicaciones[0].diaPublicacion,
+
+        publicaciones: publicaciones,
+        comentarios: comentarios,
+        reacciones: reacciones
+    });
+    
+})
+
 module.exports = router;
