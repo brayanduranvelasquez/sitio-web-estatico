@@ -1,4 +1,4 @@
-<aside class="col-12 col-md-4">
+<aside class="col-12 col-lg-4">
     <div class="row">
 
         <div class="col-12 pb-4">
@@ -21,7 +21,7 @@
                     <% if (publicacion.viewNombre != viewActual) { %>
 
                         <div class="card">
-                            <img class="card-img-top" src=<%= publicacion.imgUrl %>>
+                            <img class="card-img-top d-none d-lg-block" src=<%= publicacion.imgUrl %>>
                             <div class="card-body">
                                 <h4 class="card-title"> <%= publicacion.titulo %> </h4>
                                 <p class="card-text"><%= publicacion.descripcion %></p>
