@@ -8,7 +8,7 @@
                 <div class="text-center pb-4">
                     <h5>Califica esta publicación</h5>
                     <button class="btn btn-success"><%= reaccion.megustas %> me gustas</button>
-                    <button class="btn btn-danger"><%= reaccion.nomegustas %> no me gusta</button>
+                    <button class="btn btn-danger"><%= reaccion.nomegustas %> no me gustas</button>
                 </div>
 
             <% } %>
@@ -33,7 +33,7 @@
 
                     <% } else { %>
 
-                        <h2>Comentarios</h2>
+                        <h2 class="mb-3 mt-3">Comentarios</h2>
 
                         <% comentario.comentarios.forEach(puntero => {  %>
 
