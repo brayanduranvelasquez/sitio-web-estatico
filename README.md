@@ -20,7 +20,7 @@ Fue desarrollado a traves de Nodejs, utilizando el framework Expressjs y el moto
 
 Se utiliza el preprocesador [SASS](https://sass-lang.com/). Y las imágenes de las publicaciones fueron extraídas de [pixabay.com](www.pixabay.com/es).
 
-Con respecto al texto en las publicaciones, fue resumido y analizado. De igual forma, se colocaron al final de cada publicación, las fuentes de donde proviene cada informácion.
+Con respecto al texto en las publicaciones, fue resumido y analizado. De igual forma, se colocaron al final de cada publicación, las fuentes de donde proviene cada información. Cabe destacar que ninguna de ellas y ellos publicaron ningun post ni comentario, solo se utilizaron sus nombres por y para el diseño del mismo sitio web. Pueden ir siempre que quieran a los enlaces de las fuentes en el mismo.
 
 ## Capturas de Pantalla
 
